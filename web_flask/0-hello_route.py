@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Starts a Flask web application.Displays  “Hello HBNB!”
+''' Starts a Flask web application.Displays  “Hello HBNB!'''
 from flask import Flask
 
 app = Flask(__name__)
@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def index():
+    '''Home page display'''
     return "Hello HBNB!"
 
 
